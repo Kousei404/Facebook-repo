@@ -1,0 +1,134 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body, html {
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #fff;
+    overflow-x: hidden; /* Changed from hidden to allow vertical scrolling on mobile */
+}
+
+.split-screen {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.left-panel {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+}
+
+.left-panel img {
+    max-width: 85%;
+    height: auto;
+    object-fit: contain;
+}
+
+.right-panel {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.login-header {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    color: #1c1e21;
+}
+
+.login-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-box input {
+    height: 52px;
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 12px;
+    font-size: 16px;
+    outline: none;
+}
+
+.login-box input:focus {
+    border-color: #0866ff;
+    box-shadow: 0 0 0 2px #e7f3ff;
+}
+
+.login-btn {
+    background-color: #0064e0;
+    color: #fff;
+    border: none;
+    border-radius: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 14px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.forgot-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #1c1e21;
+    font-size: 15px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.create-section {
+    margin-top: 80px;
+}
+
+.create-btn-outline {
+    width: 100%;
+    background-color: transparent;
+    color: #0064e0;
+    border: 1px solid #0064e0;
+    border-radius: 26px;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.meta-footer {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+}
+
+.meta-logo-img {
+    height: 18px; /* Slightly increased for visibility */
+    width: auto;
+}
+
+@media (max-width: 900px) {
+    .split-screen { 
+        flex-direction: column; 
+    }
+    .left-panel { 
+        padding: 40px 20px; 
+    }
+}
